@@ -12,6 +12,7 @@ dependencies = [
     "click>=8.0.0",
     "langchain-openai>=0.1.0",
     "langfuse>=2.0.0",
+    "pytest>=8.4.2",
 ]
 
 [project.optional-dependencies]
