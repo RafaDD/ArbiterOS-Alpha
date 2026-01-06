@@ -350,7 +350,10 @@ class TestCodeGenerator:
             )
 
             assert result.success is True
-            assert not any("Added import: from arbiteros_alpha import ArbiterOSAlpha" in change for change in result.changes)
+            assert not any(
+                "Added import: from arbiteros_alpha import ArbiterOSAlpha" in change
+                for change in result.changes
+            )
         finally:
             temp_path.unlink()
 
