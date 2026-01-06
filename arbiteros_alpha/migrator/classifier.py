@@ -229,7 +229,9 @@ class InstructionClassifier:
         llm = self._get_llm()
 
         # Add JSON format instructions to prompt
-        json_prompt = self._build_classification_prompt(function, include_json_format=True)
+        json_prompt = self._build_classification_prompt(
+            function, include_json_format=True
+        )
 
         # Use regular invocation (no structured output)
         response = llm.invoke(json_prompt)
